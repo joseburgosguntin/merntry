@@ -35,7 +35,12 @@ class Input extends Component {
     return (
       <div>
         <input type="text" onChange={this.handleChange} value={action} />
-        <button onClick={this.addTodo}>add todo</button>
+        <button
+          className="hover:text-cyan-300 rounded-md transition duration-900 ease-out hover:ease-in "
+          onClick={this.addTodo}
+        >
+          add todo
+        </button>
       </div>
     );
   }
